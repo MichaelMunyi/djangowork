@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        
+        h1{
+            font-size: 40px;
+            text-align: center;
+            color: blue;
+            line-height: 80px;
+            background-color: brown;
+        }
+        h1 hover{
+            
+        }
+    </style>
+</head>
+<body>
+<h1>WELCOME TO MY Homepage</h1>
+<a href="{% url 'Tables' %}" class="btn btn-primary">Tables</a>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aperiam autem beatae consequuntur corporis dicta eaque enim eos, et ipsa ipsam labore officia omnis quibusdam quidem similique sit vitae.</span><span>Atque consequatur, doloremque? Ab aliquid animi asperiores consequuntur cum dolore doloremque doloribus ex illo inventore ipsa minima minus nostrum pariatur quas quis, ratione reprehenderit similique suscipit unde veniam vero voluptate.</span><span>Aliquam asperiores, delectus dicta doloremque et iste iure mollitia numquam officiis omnis quas quisquam rem saepe sed sunt suscipit unde ut velit veniam voluptate. Mollitia odit officiis perspiciatis saepe voluptatum!</span></p>
+
+<img src="{% static 'images/hallan.jpg' %}" alt="">
+<img src="{% static 'images/messi.jpeg' %}" alt="">
+<img src="{% static 'images/roro.jpg' %}" alt="">
+
+<br><br>
+<h1 class="heading2">Services</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et exercitationem officiis repellat? Accusamus asperiores dolorum eveniet explicabo placeat quam recusandae. Atque consequuntur distinctio incidunt natus neque quaerat quibusdam quisquam suscipit!</p>
+<img class="my image" src="{% static 'images/roro' %}" alt="">
+</body>
+</html>
